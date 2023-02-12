@@ -4,47 +4,53 @@ import logo_cookmentory from "assets/img/Cookmentory.png";
 
 function Navbar() {
     return (
-        <navbar className="w-full py-6 shadow-md fixed">
+        <navbar className="w-full py-6 top-0 fixed">
             <div className="bg-white px-4 sm:px-6">
                 <div className="-ml-4 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
                     <div className="mt-2 flex flex-wrap items-center ml-1.5">
-                        <img src={logo_cookmentory} width={60} height={60} className="" alt="logo"/>
-                        <h3 className="font-bold">Cook-Mentory</h3>
+                        <img
+                            src={logo_cookmentory}
+                            width={60}
+                            height={60}
+                            className=""
+                            alt="logo"
+                        />
+                        <h3 className="font-bold ml-1.5">Cook-Mentory</h3>
                     </div>
                     <div className="ml-4 mt-2 flex-shrink-0">
                         <Link
                             to="/recomendaciones"
-                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4"
+                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4 hover:text-orange-600 hover:font-bold"
                         >
                             Recomendaciones
                         </Link>
                         <Link
                             to="/menus"
-                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4"
+                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4 hover:text-orange-600 hover:font-bold"
                         >
                             Menus
                         </Link>
                         <Link
                             to="/somos"
-                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4"
+                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4 hover:text-orange-600 hover:font-bold"
                         >
                             ¿Quién Soy?
                         </Link>
                         <Link
                             to="/platillo"
-                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4"
+                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4 hover:text-orange-600 hover:font-bold"
                         >
                             La especialidad del día
                         </Link>
                         <Link
                             to="/blog"
-                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4"
+                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4 hover:text-orange-600 hover:font-bold"
                         >
                             Nuestro Blog
                         </Link>
                         <Link
                             to="/contacto"
-                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4"
+                            className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4 hover:text-orange-600 hover:font-bold"
                         >
                             Contacto
                         </Link>
