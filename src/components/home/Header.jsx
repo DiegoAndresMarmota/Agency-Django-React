@@ -22,26 +22,32 @@ function Header() {
                         <div>
                             <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
                                 Tu guía culinaria para crear y transmitir
-                                <Typewriter
-                                    words={[" sabores.", " saberes.", " con excelencia."]}
-                                    loop={0}
-                                    cursor
-                                    cursorStyle="_"
-                                    typeSpeed={70}
-                                    deleteSpeed={50}
-                                    delaySpeed={1000}
-                                // onLoopDone={handleDone}
-                                // onType={handleType}
-                                />
+                                <span> </span>
+                                <div
+                                    className="inline-flex"
+                                    style={{ color: "#fa7a02", fontWeight: "bold" }}
+                                >
+                                    <Typewriter
+                                        words={["sabores.", "saberes.", "con excelencia."]}
+                                        loop={0}
+                                        cursor
+                                        cursorStyle="_"
+                                        typeSpeed={70}
+                                        deleteSpeed={50}
+                                        delaySpeed={1000}
+                                    // onLoopDone={handleDone}
+                                    // onType={handleType}
+                                    />
+                                </div>
                             </h1>
                             <p className="mt-6 text-lg py-3 leading-8 text-gray-600 sm:text-center">
-                                Somos una empresa virtual, conformada por “Redes
-                                Colaborativas" en donde encontramos desde comunicadores hasta
-                                gastronómicos que estan a disposición del Mercado Gastronómico
-                                Nacional. Estas redes nacen con el fin de apoyar al “Mercado
-                                Gastronómico Nacional” a través de sus Servicios de
-                                Comunicación Digital y generación de recetas para pequeños
-                                proveedores incluso a través de canje.
+                                Deseamos contribuir como una empresa virtual, conformada por
+                                “Redes Colaborativas" en donde encontramos desde comunicadores
+                                hasta gastronómicos que estan a disposición del Mercado
+                                Gastronómico Nacional. Estas redes nacen con el fin de apoyar
+                                al “Mercado Gastronómico Nacional” a través de sus Servicios
+                                de Comunicación Digital y generación de recetas para pequeños
+                                proveedores incluso a través del canje y promociones.
                             </p>
                             <div className="mt-8 flex gap-x-6 sm:justify-center items-center">
                                 <a
