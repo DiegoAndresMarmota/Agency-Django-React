@@ -1,4 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -9,7 +10,8 @@ function Header() {
                         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                             <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                                 <span className="text-gray-600">
-                                    Somos una “Plataforma Abierta” para los emprendedores pertenecientes al mercado gastronómico.{" "}
+                                    Somos una “Plataforma Abierta” para los emprendedores
+                                    pertenecientes al mercado gastronómico.{" "}
                                     <a href="/somos" className="font-semibold text-orange-600">
                                         <span className="absolute inset-0" aria-hidden="true" />
                                         Ver más <span aria-hidden="true">&rarr;</span>
@@ -32,37 +34,59 @@ function Header() {
                                 // onType={handleType}
                                 />
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
+                            <p className="mt-6 text-lg py-3 leading-8 text-gray-600 sm:text-center">
                                 Somos una empresa virtual, conformada por “Redes
-                                Colaborativas" en donde encontramos desde Foodies-
-                                Comunicadores (Fotógrafos Profesionales y FoodBlogger) hasta
+                                Colaborativas" en donde encontramos desde comunicadores hasta
                                 gastronómicos que estan a disposición del Mercado Gastronómico
-                                Nacional.. Estas redes nacen con el fin de apoyar al “Mercado
-                                Gastronómico Nacional” (Locatarios, Proveedores y
-                                Profesionales Gastronómicos) a través de sus Servicios de
-                                Comunicación Digital (Notas Periodísticas, Fotografía
-                                Profesional, Vídeos y Mkt Viral), y genracion de recetas para
-                                pequeños proveedores (productores locales) incluso a través de
-                                canje.
+                                Nacional. Estas redes nacen con el fin de apoyar al “Mercado
+                                Gastronómico Nacional” a través de sus Servicios de
+                                Comunicación Digital y generación de recetas para pequeños
+                                proveedores incluso a través de canje.
                             </p>
-                            <div className="mt-8 flex gap-x-4 sm:justify-center">
+                            <div className="mt-8 flex gap-x-6 sm:justify-center items-center">
                                 <a
                                     href="/blog"
                                     className="inline-block rounded-lg bg-orange-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-orange-600 hover:bg-orange-700 hover:ring-orange-700"
                                 >
-                                    Noticias
+                                    <li className="inline-flex font-bold hover:text-orange-600 hover:font-bold">
+                                        <Link to="/#">Foodies</Link>
+                                    </li>
                                     <span className="text-orange-200" aria-hidden="true">
                                         &rarr;
                                     </span>
-                                </a>
-                                <a
-                                    href="/blog"
-                                    className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-                                >
-                                    Regístrate
-                                    <span className="text-gray-400" aria-hidden="true">
-                                        &rarr;
-                                    </span>
+                                    <a
+                                        href="/blog"
+                                        className="inline-block rounded-lg bg-orange-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-orange-600 hover:bg-orange-700 hover:ring-orange-700"
+                                    >
+                                        <li className="inline-flex font-bold hover:text-orange-600 hover:font-bold">
+                                            <Link to="/#">FoodBloggers</Link>
+                                        </li>
+                                        <span className="text-orange-200" aria-hidden="true">
+                                            &rarr;
+                                        </span>
+                                    </a>
+                                    <a
+                                        href="/blog"
+                                        className="inline-block rounded-lg bg-orange-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-orange-600 hover:bg-orange-700 hover:ring-orange-700"
+                                    >
+                                        <li className="inline-flex font-bold hover:text-orange-600 hover:font-bold">
+                                            <Link to="/#">Profesionales Gastronómicos</Link>
+                                        </li>
+                                        <span className="text-orange-200" aria-hidden="true">
+                                            &rarr;
+                                        </span>
+                                    </a>
+                                    <a
+                                        href="/blog"
+                                        className="inline-block rounded-lg bg-orange-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-orange-600 hover:bg-orange-700 hover:ring-orange-700"
+                                    >
+                                        <li className="inline-flex font-bold hover:text-orange-600 hover:font-bold">
+                                            <Link to="/#">Productores Locales</Link>
+                                        </li>
+                                        <span className="text-orange-200" aria-hidden="true">
+                                            &rarr;
+                                        </span>
+                                    </a>
                                 </a>
                             </div>
                         </div>
