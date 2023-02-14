@@ -6,7 +6,7 @@ function Contacto() {
     return (
         <Layout>
             <Navbar />
-            <div className="pt-32">Contacto</div>
+            <div className="pt-10">Contacto</div>
             <Footer />
         </Layout>
     );

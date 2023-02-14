@@ -6,7 +6,7 @@ function Especialidad() {
     return (
         <Layout>
             <Navbar />
-            <div className="pt-32">Especialidad</div>
+            <div className="pt-10">Especialidad</div>
             <Footer />
         </Layout>
     );
