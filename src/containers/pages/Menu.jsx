@@ -6,7 +6,7 @@ function Menu() {
     return (
         <Layout>
             <Navbar />
-            <div className="pt-32">Menu</div>
+            <div className="pt-10">Menu</div>
             <Footer />
         </Layout>
     );

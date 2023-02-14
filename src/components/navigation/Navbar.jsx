@@ -4,7 +4,7 @@ import logo_cookmentory from "assets/img/Cookmentory.png";
 
 function Navbar() {
     return (
-        <navbar className="w-full py-6 top-0 fixed">
+        <navbar className="w-full py-6 top-0 fixed z-40">
             <div className="bg-gray-100 px-4 sm:px-6">
                 <div className="-ml-4 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
                     <Link to='/' className="mt-2 flex flex-wrap items-center ml-1.5">
