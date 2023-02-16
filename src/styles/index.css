@@ -5,3 +5,7 @@
 .active{
     @apply text-orange-600
 }
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
