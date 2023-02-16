@@ -1,3 +1,4 @@
+import OverSubtitle from "components/OverSubtitle";
 import Footer from "components/navigation/Footer";
 import Navbar from "components/navigation/Navbar";
 import SubSomos from "components/somos/SubSomos";
@@ -8,6 +9,7 @@ function Somos() {
         <Layout>
             <Navbar />
             <div className="pt-10">
+                <OverSubtitle />
                 <SubSomos />
             </div>
             <Footer />
