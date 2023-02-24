@@ -1,5 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
+import imagenHome from "../../assets/img/Undercover-Home.jpg"
 
 function Header() {
     return (
@@ -9,7 +10,7 @@ function Header() {
                     <div>
                         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                             <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                <span className="text-gray-600">
+                                <span className="text-white">
                                     Somos una “Plataforma Abierta” para los emprendedores
                                     pertenecientes al mercado gastronómico.{" "}
                                     <a href="/somos" className="font-semibold text-orange-600">
@@ -19,8 +20,15 @@ function Header() {
                                 </span>
                             </div>
                         </div>
+                        <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
+                            <img
+                                src={imagenHome}
+                                className="w-full h-full object-cover"
+                                alt="undercover-home"
+                            />
+                        </div>
                         <div>
-                            <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+                            <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl text-white text-shadow">
                                 Tu guía culinaria para crear y transmitir
                                 <span> </span>
                                 <div
@@ -40,7 +48,7 @@ function Header() {
                                     />
                                 </div>
                             </h1>
-                            <p className="mt-6 text-lg py-3 leading-8 text-gray-600 sm:text-center">
+                            <p className="mt-6 text-lg py-3 leading-8 text-white text-shadow sm:text-center">
                                 Deseamos contribuir como una empresa virtual, conformada por
                                 “Redes Colaborativas" en donde encontramos desde comunicadores
                                 hasta gastronómicos que estan a disposición del Mercado
