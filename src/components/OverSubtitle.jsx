@@ -1,7 +1,7 @@
 import React from "react";
 import imagenSubHome from "../assets/img/SubUndercover.jpg";
 
-const OverSubtitle = () => {
+const OverSubtitle = (props) => {
     return (
       <main>
         <div className="relative px-6 lg:px-8">
@@ -17,12 +17,13 @@ const OverSubtitle = () => {
               <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-7xl text-white text-shadow">
-                  Data to enrich your online business
+                  {props.title}
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-white sm:text-center text-white text-shadow">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                <p className="mt-6 text-lg leading-8 sm:text-center text-white text-shadow">
+                  {props.subtitle}
+                </p>
+                <p className="mt-1 text-lg leading-8 sm:text-center text-white text-shadow">
+                  {props.author}
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center"></div>
               </div>
