@@ -3,16 +3,33 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      tablet: "640px",
+      sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      laptop: "1024px",
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1090px",
       // => @media (min-width: 1024px) { ... }
 
-      desktop: "1280px",
+      xl: "1280px",
       // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+
+      "3xl": "1720px",
+      // => @media (min-width: 1536px) { ... }
+
+      "4xl": "1856px",
+      // => @media (min-width: 1536px) { ... }
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };
